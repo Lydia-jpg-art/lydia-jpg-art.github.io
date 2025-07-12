@@ -1,0 +1,49 @@
+/* 设置全站字体和基本排版 */
+body {
+  font-family: "Noto Serif SC", "Georgia", serif;
+  color: #3b3b3b;
+  font-size: 16px;
+  line-height: 1.75;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 2rem;
+  background-color: #fdf9f4;
+}
+
+/* 修复博客标题空格和字体 */
+h1, h2, h3 {
+  font-family: "Georgia", serif;
+  letter-spacing: 0.5px;
+  color: #5a2c1c;
+}
+
+/* 缩小页面里的大图标（email图标） */
+img {
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin: 2rem auto;
+}
+
+/* 美化链接 */
+a {
+  color: #a14a2b;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* 居中欢迎语 */
+.intro {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* 替换原来的.post-content规则 */
+article.post-content, 
+main .post-content {
+  border: 2px solid red !important;
+  padding: 1rem !important;
+  background-color: rgba(255,255,255,0.9) !important;
+}
