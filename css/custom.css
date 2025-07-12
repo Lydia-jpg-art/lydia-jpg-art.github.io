@@ -1,49 +1,49 @@
-/* 设置全站字体和基本排版 */
 body {
-  font-family: "Noto Serif SC", "Georgia", serif;
-  color: #3b3b3b;
-  font-size: 16px;
-  line-height: 1.75;
-  margin: 0 auto;
-  max-width: 800px;
-  padding: 2rem;
-  background-color: #fdf9f4;
+  font-family: "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  color: #333333;
+  line-height: 1.6;
+  background-color: #fff8f0;
+  margin: 0;
+  padding: 1rem 2rem;
 }
 
-/* 修复博客标题空格和字体 */
-h1, h2, h3 {
-  font-family: "Georgia", serif;
-  letter-spacing: 0.5px;
-  color: #5a2c1c;
-}
-
-/* 缩小页面里的大图标（email图标） */
-img {
-  max-width: 300px;
-  height: auto;
-  display: block;
-  margin: 2rem auto;
-}
-
-/* 美化链接 */
-a {
+h1, h2, h3, h4 {
+  font-family: "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  font-weight: 600;
   color: #a14a2b;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+a {
+  color: #aa4a30;
   text-decoration: none;
+  border-bottom: 1px solid #f1c4b2;
 }
+
 a:hover {
-  text-decoration: underline;
+  color: #d95d39;
+  border-bottom: 1px solid #d95d39;
 }
 
-/* 居中欢迎语 */
-.intro {
-  text-align: center;
-  margin-top: 2rem;
+article {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
-/* 替换原来的.post-content规则 */
-article.post-content, 
-main .post-content {
-  border: 2px solid red !important;
-  padding: 1rem !important;
-  background-color: rgba(255,255,255,0.9) !important;
+time {
+  font-size: 0.9rem;
+  color: #666;
 }
+
+img {
+  max-width: 100%;
+  border-radius: 6px;
+  margin: 1rem 0;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+

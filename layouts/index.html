@@ -1,0 +1,21 @@
+{{ define "main" }}
+<section style="max-width: 800px; margin: 3rem auto; padding: 0 1rem; font-family: 'Noto Serif SC', serif; color: #4a3c31;">
+  <h1 style="font-size: 2.8rem; font-weight: 700; border-bottom: 3px solid #a14a2b; padding-bottom: 0.5rem; margin-bottom: 2rem;">
+    文章列表
+  </h1>
+
+  {{ range where .Site.RegularPages "Section" "posts" }}
+  <article style="margin-bottom: 2.5rem; padding-bottom: 1rem; border-bottom: 1px solid #e3d7ca;">
+    <h2 style="font-size: 1.6rem; margin-bottom: 0.3rem;">
+      <a href="{{ .RelPermalink }}" style="color: #a14a2b; text-decoration: none; transition: color 0.3s;">
+        {{ .Title }}
+      </a>
+    </h2>
+    <time style="font-size: 0.9rem; color: #7a6a5d;">{{ .Date.Format "2006-01-02" }}</time>
+    <p style="margin-top: 0.8rem; color: #5e4f43;">
+      {{ with .Summary }}{{ . | plainify | truncate 120 }}{{ else }}{{ .Content | plainify | truncate 120 }}{{ end }}
+    </p>
+  </article>
+  {{ end }}
+</section>
+{{ end }}
